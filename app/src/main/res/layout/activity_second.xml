@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".SecondActivity">
+  <TextView
+    android:id="@+id/tv_a"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ID:A"
+    android:width="250dp"
+    android:height="100dp"
+    android:background="#EE3124"
+    android:gravity="center"
+    android:textSize="24dp"
+    android:textColor="#fff"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="16dp"
+  />
+  <TextView
+    android:id="@+id/tv_b"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ID:B"
+    android:width="250dp"
+    android:height="100dp"
+    android:background="#EE3124"
+    android:gravity="center"
+    android:textSize="24dp"
+    android:textColor="#fff"
+    android:layout_centerInParent="true"
+    android:layout_below="@id/tv_a"
+  />
+  <TextView
+    android:id="@+id/tv_c"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ID:C"
+    android:width="250dp"
+    android:height="100dp"
+    android:background="#EE3124"
+    android:gravity="center"
+    android:textSize="24dp"
+    android:textColor="#fff"
+    android:layout_centerInParent="true"
+    android:layout_above="@id/tv_a"
+    android:layout_marginBottom="16dp"
+  />
+
+</RelativeLayout>

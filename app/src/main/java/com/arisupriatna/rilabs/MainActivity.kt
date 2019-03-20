@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,11 +21,16 @@ class MainActivity : AppCompatActivity() {
 
         buttonShow.setOnClickListener {
             var text = inputText.text.toString()
-            showTextView.text = text
+            if (text.trim().isNotEmpty()) {
+                showTextView.text = text
+            } else {
+                Toast.makeText(applicationContext, "Please enter some message!", Toast.LENGTH_SHORT).show()
+            }
+
         }
 
         buttonGoHome.setOnClickListener {
-            var intent = Intent(this@MainActivity, HomeActivity::class.java)
+            var intent = Intent(this@MainActivity, ProfileActivity::class.java)
             startActivity(intent) // for navigate to another screen
         }
     }
